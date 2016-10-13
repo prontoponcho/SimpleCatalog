@@ -11,16 +11,16 @@ Base = declarative_base()
 # Python Classes for DB Tables 
 class Restaurant(Base):
 
-	# DB Table
+    # DB Table
     __tablename__ = 'restaurant'
    
-   	# Mapper
+    # Mapper
     id = Column(Integer, primary_key=True)
     name = Column(String(250), nullable=False)
  
 class MenuItem(Base):
 
-	# DB Table
+    # DB Table
     __tablename__ = 'menu_item'
 
     # Mapper
